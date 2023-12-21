@@ -11,235 +11,87 @@
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-
-    <aside>
-        <div id="hero">
-            <img>
-            <h1>Dashboard</h1> 
-        </div>
-        <ul>
-            <li>
-                <img>
-                <h2>Home</h2>
-            </li> 
-            <li>
-                <img>
-                <h2>Profile</h2>
-            </li>
-            <li>
-                <img>
-                <h2>Messages</h2>
-            </li> 
-            <li>
-                <img>
-                <h2>History</h2>
-            </li> 
-            <li>
-                <img>
-                <h2>Tasks</h2>
-            </li> 
-            <li>
-                <img>
-                <h2>Communities</h2>
-            </li> 
-            <li>
-                <img>
-                <h2>&nbsp;</h2>
-            </li>
-            <li>
-                <img>
-                <h2>Settings</h2>
-            </li>
-            <li>
-                <img>
-                <h2>Support</h2>
-            </li>
-            <li>
-                <img>
-                <h2>Privacy</h2>
-            </li> 
-        </ul>
-    </aside>
-    
-    <header>
+    <div id="container">
+        <aside>
+            <div id="hero">
+                <img src="media/aside/atom-variant.svg">
+                <h1>Dashboard</h1> 
+            </div>
+            <ul>
+                <li>
+                    <img src="media/aside/home.svg">
+                    <h2>Home</h2>
+                </li> 
+                <li>
+                    <img src="media/aside/card-account-details-outline.svg">
+                    <h2>Profile</h2>
+                </li>
+                <li>
+                    <img src="media/aside/message-reply.svg">
+                    <h2>Messages</h2>
+                </li> 
+                <li>
+                    <img src="media/aside/history.svg">
+                    <h2>History</h2>
+                </li> 
+                <li>
+                    <img src="media/aside/checkbox-marked-circle-auto-outline.svg">
+                    <h2>Tasks</h2>
+                </li> 
+                <li id="communities-margin">
+                    <img src="media/aside/account-group.svg">
+                    <h2>Communities</h2>
+                </li> 
+                <li>
+                    <img src="media/aside/cog.svg">
+                    <h2>Settings</h2>
+                </li>
+                <li>
+                    <img src="media/aside/help-box-multiple.svg">
+                    <h2>Support</h2>
+                </li>
+                <li>
+                    <img src="media/aside/lock-check.svg">
+                    <h2>Privacy</h2>
+                </li> 
+            </ul>
+        </aside>
+        
         <nav>
             <div id="search-bar">
-                <img id="search-icon">
+                <img id="search-icon" src="media/misc/magnify.svg">
                 <form>
-                    <label></label>
-                    <input type="text">
+                    <input id="search", name="search", type="text">
                 </form>
             </div>
-            <img id="notification-icon">
             <div id="profile">
-                <img class="user-icon">
+                <img id="notification-icon" src="media/misc/bell-ring.svg">
+                <img class="user-icon" src="media/user-icons/cat.png">
                 <h3 class="username">Morgan Oakley</h3>
             </div>
         </nav>
-        <section id="menu">
-            <img class="user-icon">
-            <p>Hi there, </p>
-            <h3 class="username">Morgan Oakley (@morgan)</h3>
+        
+        <header id="menu">
+            <img class="user-icon" src="media/user-icons/cat.png">
+            <p>Hi there, <br><b>Morgan Oakley (@morgan)</b></br></p>
             <ul>
                 <li>New</li>
                 <li>Upload</li>
                 <li>Share</li>
             </ul>
-        </section>
-    </header>
+        </header>
 
-    <main>
-
-        <section id="left-panel">
-            <h3>Your Projects</h3>
-            <div id="note1">
-                <h3>Super Cool Project</h3>
-                <p>Sed tempus at lacus ut scelerisque. Suspendisse sollicitudin nibh erat, 
-                    id facilisis felis accumsan nec.</p>
-                <ul>
-                    <li>
-                        <img class="star-icon">
-                    </li>
-                    <li>
-                        <img class="eye-icon">
-                    </li>
-                    <li>
-                        <img class="share-icon">
-                    </li>                    
-                </ul>
-            </div> 
-            <div id="note2">
-                <h3>Less Cool Project</h3>
-                <p>Nullam condimentum ipsum ut lectus vehicula consectetur. 
-                   Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor. 
-                   Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.</p>
-                <ul>
-                    <li>
-                        <img class="star-icon">
-                    </li>
-                    <li>
-                        <img class="eye-icon">
-                    </li>
-                    <li>
-                        <img class="share-icon">
-                    </li>                    
-                </ul>
+        <main>
+            <div>
+                <h3>Your Projects</h3>
+                <h3>Announcements</h3>
             </div>
-            <div id="note3">
-                <h3>Impossible App</h3>
-                <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, 
-                   a placerat velit sagittis id.</p>
-                <ul>
-                    <li>
-                        <img class="star-icon">
-                    </li>
-                    <li>
-                        <img class="eye-icon">
-                    </li>
-                    <li>
-                        <img class="share-icon">
-                    </li>                    
-                </ul>
+            <div id="inner-grid">
+                <!-- Duas linhas // Duas colunas -->
+                <!-- Primeira linha: Projects & Announcements
+                Segunda linha: Expansão de Projects & Trending -->
             </div>
-            <div id="note4">
-                <h3>Easy Peasy App</h3>
-                <p>Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam. 
-                   Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.</p>
-                <ul>
-                    <li>
-                        <img class="star-icon">
-                    </li>
-                    <li>
-                        <img class="eye-icon">
-                    </li>
-                    <li>
-                        <img class="share-icon">
-                    </li>                    
-                </ul>
-            </div>
-            <div id="note5">
-                <h3>Ad Blocker</h3>
-                <p>Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, 
-                   pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
-                <ul>
-                    <li>
-                        <img class="star-icon">
-                    </li>
-                    <li>
-                        <img class="eye-icon">
-                    </li>
-                    <li>
-                        <img class="share-icon">
-                    </li>                    
-                </ul>
-            </div>
-            <div id="note6">
-                <h3>Money Maker</h3>
-                <p>Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, 
-                   ac scelerisque tortor purus sit amet ex. Pellentesque mollis nec sem vel aliquam.</p>
-                <ul>
-                    <li>
-                        <img class="star-icon">
-                    </li>
-                    <li>
-                        <img class="eye-icon">
-                    </li>
-                    <li>
-                        <img class="share-icon">
-                    </li>                    
-                </ul>
-            </div>
-        </section>
-
-        <section id="right-panel">
-            <h3>Announcements</h3>
-            <div id="announcements">
-                <ul>
-                    <li>
-                        <h3>Site Maintenance</h3>
-                        <p>Vestibulum condimentum tellus lacus in accumsan elit maximus ac. 
-                           Donec hendrit sodales congue...</p>
-                    </li>
-                    <li>
-                        <h3>Community Share Day</h3>
-                        <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. 
-                           Aliquam dictum accumsan porttitor...</p>
-                    </li>
-                    <li>
-                        <h3>Updated Privacy Policy</h3>
-                        <p>Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. 
-                           Cras fringilla sagittis sem in mattis...</p>
-                    </li>
-                </ul>
-            </div>
-            <h3>Trending</h3>
-            <div id="trending">
-                <ul>
-                    <li>
-                        <img>
-                        <h4>@tegan</h4>
-                        <p>World Peace Builder</p>
-                    </li>
-                    <li>
-                        <img>
-                        <h4>@morgan</h4>
-                        <p>Super Cool Project</p>
-                    </li>
-                    <li>
-                        <img>
-                        <h4>@kendall</h4>
-                        <p>Life Changing App</p>
-                    </li>
-                    <li>
-                        <img>
-                        <h4>@alex</h4>
-                        <p>No Traffic Maker</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-    </main>
-
+        </main>
+    </div>
 </body>
 </html>
