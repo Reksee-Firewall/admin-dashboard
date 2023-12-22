@@ -1,5 +1,6 @@
 ## Admin Dashboard
 
+@Author: Reksee-Firewall
 A dashboard on a social media platform.
 
 ## Features
@@ -13,5 +14,3 @@ A dashboard on a social media platform.
 - Settings: Users can change their settings, such as their privacy settings and notification preferences, on the dashboard.
 - Support: Users can access support resources, such as a help center and a community forum, on the dashboard.
 - Overall, the dashboard provides users with a centralized view of their activity on the platform. It allows them to easily access their profiles, projects, communities, tasks, and settings.
-
-<!-- ## Technical Improvements -->
