@@ -236,6 +236,7 @@ main > div {
 	flex-direction: column;
 	border-bottom: 1px solid grey;
 	border-bottom-style: dashed;
+	margin-right: 15px;
 }
 
 #announcements li:last-child, #trending li:last-child{
